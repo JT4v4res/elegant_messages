@@ -53,7 +53,7 @@ except FileExistsError:
 
 fmt = "[%(asctime)s] - [%(levelname)s] - %(message)s"
 
-today = datetime.date.today().strftime("%Y-%m-%d")
+# Removed the unused `today` variable as it was not used in the code.
 
 file_handler = logging.handlers.TimedRotatingFileHandler('./logs/bentinho.log',
                                                          when="midnight")
