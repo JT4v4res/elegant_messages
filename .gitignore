@@ -1,2 +1,5 @@
 ## exclude .env
 .env
+
+## exclude logs
+/logs
