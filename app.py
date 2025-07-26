@@ -132,7 +132,7 @@ async def save_elegant_message(update: Update, context: ContextTypes.DEFAULT_TYP
     
     model_query = f"Agradeça ao usuário por ter enviado a seguinte mensagem: {message}"
     
-    response = await get_model_response(username, message, telegram_chat_id)
+    response = await get_model_response(username, model_query, telegram_chat_id)
     
     await context.bot.send_message(chat_id=update.effective_chat.id, text=response)
 
