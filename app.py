@@ -117,7 +117,7 @@ async def save_elegant_message(update: Update, context: ContextTypes.DEFAULT_TYP
     user_first_name = update.message.from_user.first_name
     user_last_name = update.message.from_user.last_name
 
-    username = user_first_name + ' ' + user_last_name
+    username = f"{user_first_name or ''} {user_last_name or ''}".strip() or user_first_name or 'Unknown'
     
     message = " ".join(context.args)
     
