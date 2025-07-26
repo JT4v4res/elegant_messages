@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS elegant_messages;
 
 CREATE TABLE elegant_messages (
     id SERIAL PRIMARY KEY,
-    message_author VARCHAR,
+    message_author TEXT,
     message VARCHAR,
     created_at TIMESTAMPTZ default current_timestamp
 );
